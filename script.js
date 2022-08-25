@@ -18,6 +18,14 @@ const todos = [
         text: 'chiamare avvocato',
         done: false,
     },
+    {
+        text: 'svuotare lavastoviglie',
+        done: true,
+    },
+    {
+        text: 'piantare orchidea',
+        done: false,
+    },
 ]
 
 
