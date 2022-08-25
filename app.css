@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ol,ul,menu{
+    list-style: none;
+}
+
+html{
+    background-color: tomato;
+    color: white;
+}
+
+/* CONTAINER */
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* INPUT */
+input{
+    display: inline-block;
+    line-height: 30px;
+    border-radius: 3px;
+    border: none;
+    padding: 0 15px;
+}
