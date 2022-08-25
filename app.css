@@ -18,6 +18,9 @@ html{
     max-width: 800px;
     margin: 0 auto;
 }
+h1{
+    margin: 30px;
+}
 /* INPUT */
 input{
     display: inline-block;

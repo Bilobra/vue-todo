@@ -21,8 +21,12 @@
 
         <main>
             <div class="container">
-                <input type="text" placeholder="todo....">
-                <input type="button" value="Add">
+                <input  type="text" 
+                        placeholder="todo...."
+                        v-model="newTodo">
+                <input type="button" 
+                       value="Add"
+                       @click="addTodo">
             </div>
 
             <div class="container">
@@ -30,7 +34,8 @@
                     <li v-for="(todo,index) in todos"
                         :class = "[todo.done ? 'done' : '', 'todo']">
                         {{todo.text}}
-                        <i class="fa-solid fa-xmark"></i>
+                        <i  @click="toggleDone(todo)"
+                        class="fa-solid fa-xmark"></i>
                     </li>
                 </ul>
             </div>

@@ -26,5 +26,25 @@ const app = new Vue({
     data:{
         todos : todos,
         newTodo : '',
-    }
+    },
+    methods: {
+        toggleDone(todo){
+            todo.done = !todo.done
+        },
+
+        // funzione crea obj da pushare nellìarray x creare li
+        // utilizzando il v-model dell'input
+
+        addTodo(){
+            this.newTodo = this.newTodo.trim() //controllo della spaziatura
+            if(this.newTodo != ''){
+                this.todos.push({
+                    text: this.newTodo,
+                    done : false
+                })
+
+                this.newTodo = ''
+            }
+        },
+    },
 })
