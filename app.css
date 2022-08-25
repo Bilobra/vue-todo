@@ -26,3 +26,25 @@ input{
     border: none;
     padding: 0 15px;
 }
+
+/* LIST */
+.todolist {
+    padding: 25px 0;
+}
+
+.todo{
+    /* font-weight: bold; */
+    font-size: 1rem;
+    padding: 10px 10px;
+    background-color: rgb(167, 50, 50);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.done{
+    color: rgb(165, 155, 155);
+    text-decoration: line-through;
+}
