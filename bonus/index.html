@@ -46,11 +46,11 @@
 
                 <h2>Completed</h2>
                 <ul class="todolist">
-                    <template v-for="todo in todos">
-                        <li v-if ="todoDone">
+                    
+                        <li class="todo done" v-for ="todo in todoDone ">
                             {{todo.text}}
                         </li>
-                    </template>
+                   
                 </ul>
             </div>
 

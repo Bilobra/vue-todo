@@ -38,7 +38,7 @@ const app = new Vue({
 
     computed:{
         todoDone(){
-            return this.todos.done === true
+            return this.todos.filter((el)=>el.done === true)
         }
     },
 
